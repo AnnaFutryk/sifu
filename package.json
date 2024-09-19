@@ -2,13 +2,12 @@
   "name": "sifu",
   "version": "0.1.0",
   "private": true,
-"scripts": {
-  "dev": "next dev",
-  "build": "next build && next export",
-  "start": "next start",
-  "lint": "next lint",
-  "deploy": "npm run build && git add . && git commit -m 'Deploy' && git push origin main"
-},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
