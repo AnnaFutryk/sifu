@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SIFU",
     description: "Sifu is an action game where you play as a kung-fu master seeking revenge. Each defeat ages the character but unlocks new abilities. The game combines intense combat and strategy, requiring skill and precision",
-    url: "https://annafutryk.github.io/sifu/",
+    url: "https://sifu-annafutryks-projects.vercel.app/sifu/",
     images: [
       {
-        url: "https://annafutryk.github.io/sifu/images/news.jpg",
+        url: "https://sifu-annafutryks-projects.vercel.app/sifu/images/news.jpg",
         width: 800,
         height: 600,
         alt: "SIFU",
