@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/modules/Header";
 
 export const metadata: Metadata = {
   title: "SIFU",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ overflowX: "hidden" }}>
+        <Header/>
         <main>{children}</main>
       </body>
     </html>

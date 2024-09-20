@@ -1,5 +1,7 @@
+import Container from "@/components/common/Container";
+
 const HomeView = () => {
-    return (<div>HomeView</div>)
+    return (<Container>HomeView</Container>)
 }
 
 export default HomeView;
