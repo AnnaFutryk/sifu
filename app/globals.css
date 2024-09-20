@@ -66,6 +66,7 @@
 html,
 body {
   font-family: "Fixel", sans-serif;
+  /* background-image: linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0) 100%); */
   max-width: 100vw;
   height: 100vh;
   display: flex;
@@ -136,4 +137,9 @@ h2 {
   h2 {
     font-size: 32px;
   }
+}
+
+.img {
+  width: 100%;
+  height: auto;
 }

@@ -1,8 +1,12 @@
 import Container from "../../common/Container";
-
+import Banner from "./components/Banner";
 
 const HomeView = () => {
-    return (<Container>HomeView</Container>)
-}
+  return (
+    <Container>
+      <Banner />
+    </Container>
+  );
+};
 
 export default HomeView;
