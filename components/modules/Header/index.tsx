@@ -4,16 +4,15 @@ import { useEffect, useState } from "react";
 import cls from "./styles.module.scss";
 import Image from "next/image";
 import LinksList from "./components/LinksList";
-import Button from "@/components/common/Button";
+
 import Link from "next/link";
 import DropDown from "./components/DropDown";
+import Burger from "./Burger";
+import Button from "../../common/Button";
 
 const Header = () => {
   const [scrolledDown, setScrolledDown] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-  // const [isModalOpen, setModalOpen] = useState(false);
-  // const [isPopupOpen, setPopupOpen] = useState(false);
-  // const [isErrorPopupOpen, setErrorPopupOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +43,9 @@ const Header = () => {
             <LinksList variant="header"/>
           </div>
         <div className={cls.rightBlock}>
-          <DropDown/>
+          <div className={cls.dropdawnWrapp}>
+            <DropDown/>
+          </div>
           <Link href="#available">
           <Button
             text="Buy now"
@@ -55,7 +56,7 @@ const Header = () => {
             /></Link>
           
         </div>
-        {/* <Burger /> */}
+        <Burger />
       </div>
     </header>
   );

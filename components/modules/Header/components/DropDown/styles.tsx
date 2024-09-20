@@ -34,7 +34,7 @@ const DropDownStyles: StylesConfig<OptionType, false, GroupBase<OptionType>> = {
   }),
   singleValue: (styles) => ({
     ...styles,
-    color: "var(--red)", 
+    color: "var(--white)", 
     margin: 0,
   }),
   menu: (styles) => ({

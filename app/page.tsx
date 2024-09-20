@@ -1,5 +1,6 @@
-import HomeView from "@/components/views/HomeView";
+
 import { Metadata } from "next";
+import HomeView from "../components/views/HomeView";
 
 export const metadata: Metadata = {
   title: "SIFU",

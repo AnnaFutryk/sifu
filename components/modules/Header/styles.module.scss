@@ -54,10 +54,6 @@
   display: flex;
   align-items: center;
   gap: 42px;
-
-  @media (max-width: 989px) {
-    display: none;
-  }
 }
 
 .none {
@@ -84,4 +80,10 @@
   @media (max-width: 550px) {
     padding: 12px 20px;
   }
+}
+
+.dropdawnWrapp{
+  @media (max-width: 989px) {
+      display: none;
+    }
 }

@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 4;
-  background-color: var(--dark-bg);
+  background-color: rgb(81, 73, 73);
 }
 
 .menuContainer {
@@ -17,7 +17,7 @@
   justify-content: space-between;
   width: 372px;
   height: 100vh;
-  background-color: var(--grey-dark);
+  background-color: rgb(211, 70, 70);
   padding: 242px 25px 124px 25px;
 
   @media (max-width: 550px) {
