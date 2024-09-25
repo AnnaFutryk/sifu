@@ -35,7 +35,7 @@ const DropDown = () => {
 
   return (
     <Select
-      id={"select"}
+      id="select"
       value={currentLanguage}
       onChange={onChange}
       options={options}
