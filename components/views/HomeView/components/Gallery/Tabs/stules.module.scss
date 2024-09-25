@@ -1,0 +1,49 @@
+.btnsWrapp {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  @media (max-width: 989px) {
+    gap: 17px;
+  }
+
+  @media (max-width: 586px) {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 16px;
+    width: 100%;
+  }
+}
+
+.btn {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color:var(--white-text);
+  transition: opacity var(--transition);
+  opacity: 0.5;
+  line-height: 1;
+
+  &:hover {
+      opacity: 1;
+    }
+}
+
+.active {
+opacity: 1;
+
+&::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    box-shadow: var(--shadow);
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--white-text);
+    transition: width var(--transition);
+    width: 100%;
+  }
+}
+
+

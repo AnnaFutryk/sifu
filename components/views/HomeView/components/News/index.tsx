@@ -12,7 +12,7 @@ const News = () => {
       <div className="titleBlock">
         <h2>LATEST NEWS</h2>
         <Ellipse />
-        <h2>消息</h2>
+        <h2 style={{fontWeight:100}}>消息</h2>
       </div>
       <div className={cls.content}>
         <div className={cls.leftBlock}>
