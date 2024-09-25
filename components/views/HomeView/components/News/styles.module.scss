@@ -1,9 +1,24 @@
 .wrapper {
   padding: 106px 81px 86px 102px;
-  background-image: radial-gradient(54.23% 56.71% at 67.85% 45.56%, rgba(17, 17, 17, 0.67) 0%, #111 100%), url(../../../../../public/images/bg2.png);
+  background-image: radial-gradient(
+      54.23% 56.71% at 67.85% 45.56%,
+      rgba(17, 17, 17, 0.67) 0%,
+      #111 100%
+    ),
+    url(../../../../../public/images/bg2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+
+  @media (max-width: 980px) {
+    background-position: right top;
+    padding: 40px;
+  }
+
+  @media (max-width: 550px) {
+    background-position: right 300px;
+    padding: 20px;
+  }
 }
 
 .content {
@@ -12,10 +27,18 @@
   gap: 30px;
   margin-top: 69px;
   margin-bottom: 87px;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
 }
 
 .leftBlock {
-  max-width: 598px;
+  max-width: 41.5%;
+
+  @media (max-width: 550px) {
+    max-width: 100%;
+  }
 }
 
 .imageWrapp {
@@ -33,6 +56,14 @@
   line-height: 1;
   letter-spacing: 0.9px;
   margin-bottom: 30px;
+
+  @media (max-width: 1100px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 980px) {
+    font-size: 28px;
+  }
 }
 
 .descr {
@@ -60,9 +91,14 @@
 }
 
 .newsItem {
-  width: 502px;
+  max-width: 502px;
   padding-left: 26px;
+  padding-right: 10px;
   border-left: 4px solid var(--red);
+
+  @media (max-width: 550px) {
+    max-width: 100%;
+  }
 }
 
 .newsSmallTitle {
@@ -70,4 +106,12 @@
   font-size: 35px;
   font-weight: 700;
   line-height: 1;
+
+  @media (max-width: 1100px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 980px) {
+    font-size: 22px;
+  }
 }
