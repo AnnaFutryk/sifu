@@ -1,21 +1,20 @@
 .wrapper {
   padding: 110px 120px 85px 118px;
-position: relative;
+  position: relative;
 
-&::before {
-        content: "";
-        position: absolute;
-        width: 321px;
-        height: 321px;
-        flex-shrink: 0;
-        border-radius: 50%;
-        background: #A40806;
-        filter: blur(250px);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 321px;
+    height: 321px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--red);
+    filter: blur(250px);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .titleAndTab {
