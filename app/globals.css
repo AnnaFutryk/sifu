@@ -127,7 +127,7 @@ h2 {
   font-weight: 700;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1260px) {
   h2 {
     font-size: 48px;
   }

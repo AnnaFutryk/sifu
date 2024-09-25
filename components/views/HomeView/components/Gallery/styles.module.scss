@@ -2,6 +2,14 @@
   padding: 110px 120px 85px 118px;
   position: relative;
 
+  @media (max-width:989px) {
+    padding: 40px;
+  }
+
+   @media (max-width:550px) {
+       padding: 16px;
+   }
+
   &::before {
     content: "";
     position: absolute;
@@ -19,13 +27,29 @@
 
 .titleAndTab {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   gap: 30px;
+
+  @media (max-width:1064px) {
+    flex-wrap: wrap;
+  }
 }
 
 .tabsWrapper {
   width: 580px;
+
+  @media (max-width:1423px) {
+    width: 500px;
+  }
+
+        @media (max-width:1342px) {
+            width: 400px;
+        }
+
+                  @media (max-width:450px) {
+                      width: 100%;
+                  }
 }
 
 .hr {

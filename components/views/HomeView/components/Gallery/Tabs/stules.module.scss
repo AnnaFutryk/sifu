@@ -7,11 +7,9 @@
     gap: 17px;
   }
 
-  @media (max-width: 586px) {
+  @media (max-width: 450px) {
     flex-direction: column;
     gap: 12px;
-    padding: 0 16px;
-    width: 100%;
   }
 }
 
@@ -43,6 +41,10 @@ opacity: 1;
     background-color: var(--white-text);
     transition: width var(--transition);
     width: 100%;
+
+    @media (max-width:450px) {
+      display: none;
+    }
   }
 }
 
