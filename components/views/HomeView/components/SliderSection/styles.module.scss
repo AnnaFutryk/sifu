@@ -11,12 +11,18 @@
   :global(.swiper-pagination-bullet-active) {
     background: rgba(217, 217, 217, 0.5);
     border: none;
-    width: 20px;
-    height: 20px;
   }
 
   :global(.swiper-pagination-horizontal) {
     bottom: 40px;
+
+    @media (max-width: 810px) {
+      bottom: 20px;
+    }
+
+          @media (max-width:550px) {
+            bottom: 0;
+          }
   }
 }
 
@@ -26,6 +32,8 @@
   position: relative;
   overflow: hidden;
   width: 100% !important;
+
+
 }
 
 .slideWrapp::before {
@@ -64,12 +72,28 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-  max-width: 740px;
+  max-width: 51%;
+
+  @media (max-width: 810px) {
+    max-width: 68%;
+  }
+
+  @media (max-width: 550px) {
+    max-width: 100%;
+  }
 }
 
 .title,
 .text {
   margin-left: 120px;
+
+  @media (max-width: 1200px) {
+    margin-left: 80px;
+  }
+
+  @media (max-width: 550px) {
+    margin: 16px;
+  }
 }
 
 .line {
@@ -88,4 +112,21 @@
 .slide:nth-child(2) .text {
   margin-left: 0;
   margin-right: 120px;
+
+  @media (max-width: 1200px) {
+    margin-right: 80px;
+  }
+
+  @media (max-width: 550px) {
+    margin: 16px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 500;
+
+  @media (max-width: 810px) {
+    font-size: 16px;
+  }
 }
