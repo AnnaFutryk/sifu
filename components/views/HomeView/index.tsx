@@ -1,6 +1,7 @@
 import Container from "../../common/Container";
 import AvailableSection from "./components/AvailableSction";
 import Banner from "./components/Banner";
+import FollowUs from "./components/FollowUs";
 import Gallery from "./components/Gallery";
 import News from "./components/News";
 import NewsLetter from "./components/NewsLetterSection";
@@ -14,7 +15,8 @@ const HomeView = () => {
       <News />
       <Gallery />
       <AvailableSection />
-      <NewsLetter/>
+      <NewsLetter />
+      <FollowUs/>
     </Container>
   );
 };

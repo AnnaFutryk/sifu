@@ -1,0 +1,20 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 68px;
+  max-width: 580px;
+}
+
+.svg {
+  fill:var(--white);
+  opacity: 0.3;
+  transition: opacity var(--transition);
+
+  &:hover {
+    opacity: 1;
+  }
+}
