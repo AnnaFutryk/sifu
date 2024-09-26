@@ -1,0 +1,155 @@
+.wrapper {
+  padding: 24px 20px 112px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 989px) {
+    padding: 40px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 16px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 321px;
+    height: 321px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--red);
+    filter: blur(250px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+  }
+}
+
+.formWrapper {
+  margin-top: 62px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputsWrapp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-bottom: 44px;
+
+  @media (max-width: 1200px) {
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 550px) {
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.inputContainer {
+  width: 100%;
+
+  @media (max-width: 550px) {
+    margin: 0 auto;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 29px 16px;
+  border: 2px solid var(--red);
+  background-color: transparent;
+  font-size: 32px;
+  text-align: center;
+  color: var(--white);
+  outline: none;
+
+  @media (max-width: 989px) {
+    padding: 12px;
+    font-size: 24px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  &::placeholder {
+    color: var(--white);
+  }
+}
+
+.textarea {
+  text-align: center;
+  resize: none;
+  height: 188px;
+  font-size: 32px;
+  padding: 29px 16px;
+  width: 100%;
+  border: 2px solid var(--red);
+  background: transparent;
+  color: var(--white);
+  outline: none;
+
+  @media (max-width: 989px) {
+    padding: 12px;
+    font-size: 24px;
+  }
+
+  @media (max-width: 550px) {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  &::placeholder {
+    color: var(--white);
+  }
+}
+
+.radioWrapp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.checkbox {
+  appearance: none;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--red);
+}
+
+.checkbox:checked {
+  background-color: var(--red);
+  border: none;
+}
+
+.checkboxText {
+  width: 548px;
+  font-size: 18px;
+
+  @media (max-width: 685px) {
+    width: 90%;
+  }
+}
+
+.link {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.errorText {
+  margin-bottom: 2px;
+  color: var(--red);
+  font-size: 10px;
+}

@@ -3,6 +3,7 @@ import AvailableSection from "./components/AvailableSction";
 import Banner from "./components/Banner";
 import Gallery from "./components/Gallery";
 import News from "./components/News";
+import NewsLetter from "./components/NewsLetterSection";
 import SliderSection from "./components/SliderSection";
 
 const HomeView = () => {
@@ -13,6 +14,7 @@ const HomeView = () => {
       <News />
       <Gallery />
       <AvailableSection />
+      <NewsLetter/>
     </Container>
   );
 };
