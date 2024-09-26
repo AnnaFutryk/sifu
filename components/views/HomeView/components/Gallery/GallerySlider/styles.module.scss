@@ -1,14 +1,12 @@
 .swipper {
   position: relative;
   padding-bottom: 88px;
-  margin-bottom: 85px;
   margin-top: 40px;
   width: 100%;
   overflow-x: hidden;
 
   @media (max-width: 480px) {
     padding-bottom: 20px;
-    margin-bottom: 20px;
   }
 
   :global(.swiper-slide) {

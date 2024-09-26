@@ -1,0 +1,103 @@
+.wrapper {
+  width: 100vw;
+  background-color: rgba(17, 17, 17, 0.05);
+  backdrop-filter: blur(25px);
+  margin-top: 92px;
+}
+
+.sectionWrapper {
+  position: relative;
+  padding: 56px 56px 164px 56px;
+  background-image: radial-gradient(
+      ellipse at center bottom,
+      #111,
+      rgba(17, 17, 17, 0) 100%
+    ),
+    url(../../../public/images/bg3.png);
+
+  @media (max-width: 1100px) {
+    padding: 56px 0;
+  }
+
+  @media (max-width: 550px) {
+    padding: 20px 0;
+  }
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0) 100%);
+  width: 100%;
+  height: 325px;
+  z-index: 1;
+}
+
+.title {
+  margin: 23px auto;
+  color: var(--white);
+  text-align: center;
+  text-shadow: 0px 4px 75px #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+
+  @media (max-width: 989px) {
+    font-size: 24px;
+  }
+}
+
+.iconsList {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 0 40px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+
+  @media (max-width: 744px) {
+    gap: 24px;
+  }
+}
+
+.sectionList {
+  position: relative;
+  z-index: 2;
+  margin-top: 70px;
+  margin-bottom: 0;
+  gap: 80px;
+
+  @media (max-width: 886px) {
+    gap: 44px;
+  }
+
+  @media (max-width: 550px) {
+    margin: 0 20px;
+    margin-top: 40px;
+  }
+}
+
+.bannerLink {
+  height: 56px;
+}
+
+.link {
+  height: 100px;
+
+  @media (max-width: 1100px) {
+    height: 70px;
+  }
+
+  @media (max-width: 550px) {
+    height: 56px;
+  }
+}
+
+.svg {
+  height: inherit;
+  width: auto;
+  &:hover {
+    filter: drop-shadow(var(--shadow));
+  }
+}

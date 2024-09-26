@@ -2,7 +2,7 @@ import Image from "next/image";
 import logo from "../../../../../public/images/logo2.png";
 import man from "../../../../../public/images/man1.png";
 import cls from "./styles.module.scss";
-import AvailableBlock from "./AvailableBlock";
+import AvailableBlock from "../../../../common/AvailableBlock";
 
 const Banner = () => {
   return (
@@ -16,7 +16,7 @@ const Banner = () => {
             <Image src={man} alt="man" sizes="100vh" className="img" />
           </div>
         </div>
-      <AvailableBlock />
+      <AvailableBlock variant="banner"/>
       </div>
     </section>
   );
