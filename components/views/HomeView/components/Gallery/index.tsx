@@ -4,6 +4,7 @@ import cls from "./styles.module.scss";
 import Ellipse from "../../../../../public/icons/ellipse.svg";
 import { useState } from "react";
 import Tabs from "./Tabs";
+import GallerySlider from "./GallerySlider";
 
 const Gallery = () => {
   const [activeButton, setActiveButton] = useState<number | null>(0);
@@ -15,7 +16,7 @@ const Gallery = () => {
   const renderComponent = () => {
     switch (activeButton) {
       case 0:
-        return <p>Photo</p>;
+        return <GallerySlider/>;
       case 1:
         return <p>Video</p>;
       default:
